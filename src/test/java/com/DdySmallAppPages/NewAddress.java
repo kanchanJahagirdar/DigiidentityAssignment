@@ -24,7 +24,7 @@ public class NewAddress {
 		this.driver = driver;
 	}
 	
-	public void Addressdetails(String street,String houseNo,String Postalcode) throws InterruptedException
+	public void Addressdetails(String street,String houseNo,String Postalcode)
 	{
 		driver.findElement(streetTextBox).sendKeys(street);
 		driver.findElement(houseNoTextBox).sendKeys(houseNo);

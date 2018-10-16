@@ -3,6 +3,8 @@
  */
 package com.DdySmallAppPages;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -26,14 +28,13 @@ public class LoginPage  {
 		
 	}
 	//String user name,String pwd
-	public void SignToDdy(String username,String pwd) throws InterruptedException
+	public void SignToDdy(String username,String pwd) 
 	{
-		driver.findElement(emailId).sendKeys(username);
-		Thread.sleep(1000);
-		driver.findElement(password).sendKeys(pwd);
-		Thread.sleep(1000);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.findElement(emailId).sendKeys(username);	
+		driver.findElement(password).sendKeys(pwd);		
 		driver.findElement(signBtn).click();
-		Thread.sleep(1000);
+		
 	}
 	
 	public void RegisterToDdy()

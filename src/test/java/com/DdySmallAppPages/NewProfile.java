@@ -27,7 +27,7 @@ public class NewProfile {
 		this.driver = driver;
 	}
 	
-	public void NewProfiledetails(String profilename,String surname) throws InterruptedException
+	public void NewProfiledetails(String profilename,String surname)
 	{
 		driver.findElement(nameTextBox).sendKeys(profilename);
 		driver.findElement(surnameTextBox).sendKeys(surname);

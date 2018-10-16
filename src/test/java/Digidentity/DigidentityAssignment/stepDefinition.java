@@ -109,7 +109,7 @@ public static String systemPath;
 
 	@Then("^Verify New address page$")
 	public void verify_New_address_page() throws Throwable {
-    
+	obj.manage().timeouts().implicitlyWait(10, TimeUnit.MILLISECONDS);
 	String pageVal = obj.findElement(By.tagName("h1")).getText();
 	if(pageVal.equalsIgnoreCase("New Address"))
 	{

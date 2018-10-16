@@ -3,6 +3,8 @@
  */
 package com.DdySmallAppPages;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -25,14 +27,12 @@ public class NewAccountPage {
 		this.driver = driver;
 	}
 	
-	public void NewAccountDetails(String username,String pwd) throws InterruptedException
-	{
-		driver.findElement(emailTextBox).sendKeys(username);
-		Thread.sleep(1000);
+	public void NewAccountDetails(String username,String pwd) 	{
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.findElement(emailTextBox).sendKeys(username);	
 		driver.findElement(pwdTextBox).sendKeys(pwd);
-		Thread.sleep(1000);
 		driver.findElement(createaccntBtn).click();
-		Thread.sleep(1000);
+		
 	}
 	
 }
