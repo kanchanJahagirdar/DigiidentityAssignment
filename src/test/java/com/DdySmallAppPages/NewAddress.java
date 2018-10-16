@@ -8,7 +8,7 @@ import org.openqa.selenium.WebDriver;
 
 /**
  * @author Kanchan Jahgairdar
- *
+* It stores elements present on New address screen
  */
 public class NewAddress {
 	

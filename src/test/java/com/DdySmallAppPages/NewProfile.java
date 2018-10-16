@@ -8,8 +8,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
 
 /**
- * @author sanke
- *
+ * @author Kanchan Jahagirdar
+* It stores elements present on New Profile screen
  */
 public class NewProfile {
 	

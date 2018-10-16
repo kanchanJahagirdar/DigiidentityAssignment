@@ -9,7 +9,7 @@ import org.openqa.selenium.WebDriver;
 
 /**
  * @author Kanchan Jahagirdar
- *
+* It stores elements present on Authentication/Login screen
  */
 public class LoginPage  {
 	
