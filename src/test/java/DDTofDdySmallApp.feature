@@ -1,9 +1,9 @@
 #Author: kawar.kanchan7@gmail.com
-#Keywords Summary : It is menat to test functionality of DdySmall App
+#Keywords Summary : It is meant to test functionality of DdySmall App
 #Feature: Currently 4 scenarios are coverd which covers both positive and negative testing
-#Scenario: Business rule through list of steps with arguments.
+#Scenario: 1.Login with Valid credentials 2.Registration with already exsisting Email 3.Registration with blank password 4.Create New Account
 #Given: The DdySmallApp server should be up
-#When: Login /Filling Details/Close.Data is handles using Tables
+#When: Login /Filling Details/Close.Data is handled using DataTables
 #Then: Message validation
 
 Feature: To test the functinality of DdySmall App
@@ -46,7 +46,7 @@ Scenario: Create New Account
     | PK | 1234 |
    	Then Verify New Profile page    
     When Enter Profile details Name Surname and DOB
-    | tom | thomas | 2013 | July | 11|
+    | kanchan | kawar | 2013 | July | 11|
     Then Verify New address page
     When Enter Address Street HouseNo and Postcode
     | MGROAD | 41 | 107|
