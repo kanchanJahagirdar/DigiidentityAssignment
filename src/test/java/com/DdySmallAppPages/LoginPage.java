@@ -38,8 +38,7 @@ public class LoginPage  {
 	
 	public void RegisterToDdy()
 	{
-		//driver.findElement(emailId).sendKeys(username);
-		//driver.findElement(password).sendKeys(pwd);
+		
 		driver.findElement(registerBtn).click();
 	}
 }
