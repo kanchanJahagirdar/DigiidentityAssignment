@@ -8,7 +8,7 @@ import org.openqa.selenium.WebDriver;
 
 /**
  * @author Kanchan Jahagirdar
- *
+ * It stores elements present on confirmation screen
  */
 public class Confirmation {
 	WebDriver driver = null;
