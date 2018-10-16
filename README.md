@@ -1,7 +1,8 @@
 ##DigiidentityAssignment
 Assignment
 #Purpose:
-This project is meant to test the functionality of DdySmallApp
+Assignment was meant to write some scenarios to test the registration and sign in DdySmallApp.
+It coveres the testing steps to check the registration functionality,login(Valid and Invalid credntials) using Page Object Model.
 
 ##Prerequisites:
 Eclipse,Java,Maven dependencies(Selenium/Cucumber/Junit),chromedriver.exe,Plugin for feature file
