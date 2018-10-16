@@ -1,12 +1,12 @@
 #Author: Kanchan Jahagirdar
 #Keywords Summary :This project is meant to test DdySmall application
-#Feature: Scenarios include Account creation/Login
+#Feature: Scenarios include Account creation/Login 1
 
 Feature: To test the functinality of DdySmall App
  
  @tag1
 Scenario: Create Account
-    Given Lauch Application
+    Given Lauch Application 
     When Click Register   
     When  Enter New Account details "ii@ww.com" and "333"
    	Then Verify New Profile page    
